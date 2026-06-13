@@ -10,17 +10,18 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/index-refresh.css" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload index-refresh">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>Nikhil Talla</span></a>
+						<a href="#banner" class="logo scrolly"><strong>Portfolio</strong> <span>Nikhil Talla</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -29,11 +30,12 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><a href="/index.html">Home</a></li>
-							<li><a href="/embedded_pages/embedded.html">Embedded Software</a></li>
-							<li><a href="/gamedev_pages/gamedev.html">Game Development</a></li>
-							<li><a href="/modeling_pages/modeling.html">CAD and 3D Modeling</a></li>
-							<li><a href="/artanimation_pages/artanimation.html">Art and Animation</a></li>
+							<li><a href="#banner">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#experience">Experience</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#education">Education</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -46,9 +48,9 @@
 							<div class="content">
 								<p>Welcome to my portfolio! This website contains some of the projects I have <br />
 									pursued recently to explore my passion in computer science, engineering, and more. <br />
-									Click on a category below to learn more.<br /></p>
+									Scroll down to learn more.<br /></p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Categories</a></li>
+									<li><a href="#about" class="button next scrolly">Explore</a></li>
 								</ul>
 							</div>
 						</div>
@@ -57,73 +59,115 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="embedded_pages/embedded.html" class="link">Embedded Software</a></h3>
-										<p>Software development + hardware. <br />
-											Skills: C++, Soldering, 3D Modeling (Autodesk Inventor) + Printing (Cura)
-										</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="gamedev_pages/gamedev.html" class="link">Game Development</a></h3>
-										<p>Software development through Unity games.<br />
-											Skills: Unity, Photoshop, C#, Jira, Git
-										</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="modeling_pages/modeling.html" class="link">CAD and 3D Modeling</a></h3>
-										<p>Mechanical engineering projects that enabled software ones. <br />
-											Skills: Autodesk Inventor, Photoshop, Cura
-										</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="artanimation_pages/artanimation.html" class="link">Art and Animation</a></h3>
-										<p>Artistic expression that assisted game design.<br />
-											Skills: Drawing, Aesprite, Pixel Art
-										</p>
-									</header>
-								</article>
+						<!-- About -->
+							<section id="about" class="portfolio-section about-section">
+								<div class="inner about-layout">
+									<div class="about-portrait">
+										<img src="images/Profile_HigherQuality.jpg" alt="Portrait of Nikhil Talla" />
+									</div>
+									<div class="about-copy">
+										<header class="major">
+											<h2>About Me</h2>
+										</header>
+										<p>Hi, my name is Nikhil Talla. I am a first year student at the University of Michigan interested in computer science, engineering, design, and more. I enjoy working on writing software with real-world impact and app development using Unity.</p>
+										<p>Outside of computer science, I also enjoy photography, sightseeing, and playing sports like tennis, golf, and pickleball.</p>
+										<p>I am always excited to learn new things and this portfolio contains some projects I have completed as I developed and honed my skills.</p>
+									</div>
+								</div>
 							</section>
 
-						<!-- Two -->
-							<section id="two">
+						<!-- Experience -->
+							<section id="experience" class="portfolio-section experience-section">
 								<div class="inner">
 									<header class="major">
-										<h2>About Me</h2>
+										<h2>Experience</h2>
 									</header>
-									<p>Hi, my name is Nikhil Talla. I am a first year student at the University of Michigan interested in computer science, engineering,<br />
-										design, and more. I enjoy working on writing software with real-world impact and app development using Unity.<br />
-										
-										<br />
-										Outside of computer science, I also enjoy photography, sightseeing, and playing sports like tennis, golf, and pickleball. <br />
-										<br />
-										I am always excited to learn new things and this portfolio contains some projects I have completed as I developed and honed my skills.
-									
-									
-									</p>
-									<ul class="actions">
-										<li><a href="#one" class="button next scrolly">Categories</a></li>
-									</ul>
+									<div class="experience-layout">
+										<div id="experience-list" class="experience-timeline" aria-label="Work experience timeline"></div>
+										<article id="experience-panel" class="experience-panel" aria-live="polite">
+											<div class="experience-panel-header">
+												<div class="experience-panel-logo-wrap">
+													<img id="experience-panel-logo" class="experience-panel-logo" src="" alt="" />
+												</div>
+												<div>
+													<h3 id="experience-panel-title"></h3>
+													<p id="experience-panel-role" class="experience-panel-role"></p>
+													<p id="experience-panel-meta" class="experience-panel-meta"></p>
+												</div>
+											</div>
+											<p id="experience-panel-summary" class="experience-panel-summary"></p>
+											<ul id="experience-panel-details" class="detail-list"></ul>
+											<ul id="experience-panel-skills" class="skill-list"></ul>
+										</article>
+									</div>
+									<noscript>
+										<div class="noscript-card-grid">
+											<article>
+												<h3>GE Aerospace</h3>
+												<p>Engineering experience details coming soon.</p>
+											</article>
+											<article>
+												<h3>Michigan Mars Rover Team</h3>
+												<p>Robotics team details coming soon.</p>
+											</article>
+											<article>
+												<h3>Otherside Games</h3>
+												<p>Game development details coming soon.</p>
+											</article>
+										</div>
+									</noscript>
+								</div>
+							</section>
+
+						<!-- Projects -->
+							<section id="projects" class="portfolio-section projects-section">
+								<div class="inner">
+									<header class="major">
+										<h2>Projects</h2>
+									</header>
+									<div id="project-list" class="project-grid" aria-live="polite"></div>
+									<noscript>
+										<div class="noscript-card-grid">
+											<article>
+												<h3>Flo State Autonomous Robot</h3>
+												<p>Autonomous robotics project details coming soon.</p>
+											</article>
+											<article>
+												<h3>Dill.Study</h3>
+												<p>Study tool project details coming soon.</p>
+											</article>
+										</div>
+									</noscript>
+								</div>
+							</section>
+
+						<!-- Education -->
+							<section id="education" class="portfolio-section education-section">
+								<div class="inner">
+									<header class="major">
+										<h2>Education</h2>
+									</header>
+									<div class="education-block">
+										<div class="education-heading">
+											<img class="education-mark" src="images/BlockM.png" alt="University of Michigan Block M" />
+											<div>
+												<p class="education-school">University of Michigan College of Engineering</p>
+												<p class="education-degree">B.S.E Computer Science | Class of 2028</p>
+											</div>
+										</div>
+										<div class="coursework-list">
+											<article class="coursework-item">
+												<p class="course-code">EECS 281</p>
+												<h3>Data Structures and Algorithms</h3>
+												<p>Data structure design, algorithmic problem solving, runtime analysis, and efficient C++ implementation.</p>
+											</article>
+											<article class="coursework-item">
+												<p class="course-code">EECS 370</p>
+												<h3>Computer Organization</h3>
+												<p>Computer architecture topics including caches, processor designs with pipelining, RISC-V architecture, and assembly.</p>
+											</article>
+										</div>
+									</div>
 								</div>
 							</section>
 
@@ -132,28 +176,6 @@
 				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
-							<!-- <section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section> -->
 							<section class="split">
 								<section>
 									<div class="contact-method">
@@ -168,7 +190,17 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#contact">nikhiltalla7764@gmail.com</a>
+										<a href="mailto:nikhiltalla7764@gmail.com">nikhiltalla7764@gmail.com</a>
+										<a href="mailto:ntalla@umich.edu">ntalla@umich.edu</a>
+									</div>
+								</section>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon brands alt fa-github"></span>
+										<h3>GitHub</h3>
+										<a href="https://github.com/nikhil-talla">Open Profile</a>
 									</div>
 								</section>
 							</section>
@@ -178,13 +210,6 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<!-- <ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul> -->
 							<ul class="copyright">
 								<li>&copy; Nikhil Talla</li><li>Design adapted from: <a href="https://html5up.net">HTML5 UP</a></li>
 							</ul>
@@ -192,6 +217,22 @@
 					</footer>
 
 			</div>
+
+		<div id="detail-modal" class="portfolio-modal" hidden>
+			<div class="modal-scrim" data-close-modal></div>
+			<article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+				<button type="button" class="modal-close" data-close-modal aria-label="Close details">&times;</button>
+				<div class="modal-content">
+					<p id="modal-kicker" class="modal-kicker"></p>
+					<h2 id="modal-title"></h2>
+					<p id="modal-meta" class="modal-meta"></p>
+					<p id="modal-summary"></p>
+					<div id="modal-gallery" class="modal-gallery"></div>
+					<ul id="modal-skills" class="skill-list"></ul>
+					<ul id="modal-details" class="detail-list"></ul>
+				</div>
+			</article>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -201,6 +242,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/index-main.js"></script>
 
 	</body>
 </html>
