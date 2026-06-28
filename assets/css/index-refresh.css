@@ -98,15 +98,15 @@ body.index-refresh .experience-timeline-item {
 	cursor: pointer;
 	display: flex;
 	font: inherit;
-	height: 5rem;
+	height: 4.4rem;
 	justify-content: center;
 	letter-spacing: 0;
 	line-height: 1;
-	padding: 0.55rem;
+	padding: 0.48rem;
 	position: relative;
 	text-transform: none;
 	transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
-	width: 5rem;
+	width: 4.4rem;
 	z-index: 1;
 }
 
@@ -141,25 +141,27 @@ body.index-refresh .noscript-card-grid article {
 }
 
 body.index-refresh .experience-panel {
-	min-height: 31rem;
-	padding: 2.25em;
+	font-size: 0.9em;
+	line-height: 1.45;
+	min-height: 24rem;
+	padding: 1.5em;
 }
 
 body.index-refresh .experience-panel-header {
 	align-items: center;
 	display: flex;
-	gap: 1.25em;
-	margin-bottom: 1.75em;
+	gap: 1em;
+	margin-bottom: 1em;
 }
 
 body.index-refresh .experience-panel-logo-wrap {
 	background: #ffffff;
 	border-radius: 50%;
 	flex: 0 0 auto;
-	height: 4.25rem;
+	height: 3.35rem;
 	overflow: hidden;
-	padding: 0.35rem;
-	width: 4.25rem;
+	padding: 0.3rem;
+	width: 3.35rem;
 }
 
 body.index-refresh .experience-panel-logo {
@@ -176,6 +178,10 @@ body.index-refresh .modal-panel h2 {
 	margin-bottom: 0.25em;
 }
 
+body.index-refresh .experience-panel h3 {
+	font-size: 1.15em;
+}
+
 body.index-refresh .experience-panel-role,
 body.index-refresh .experience-panel-meta,
 body.index-refresh .project-card-meta,
@@ -189,10 +195,23 @@ body.index-refresh .modal-kicker {
 	text-transform: uppercase;
 }
 
+body.index-refresh .experience-panel-role,
+body.index-refresh .experience-panel-meta {
+	font-size: 0.72em;
+	letter-spacing: 0.14em;
+	margin-bottom: 0.3em;
+}
+
 body.index-refresh .experience-panel-summary,
 body.index-refresh .project-card p,
 body.index-refresh .modal-panel p {
 	color: var(--refresh-text-soft);
+}
+
+body.index-refresh .experience-panel-summary {
+	font-size: 0.92em;
+	line-height: 1.5;
+	margin-bottom: 0.9em;
 }
 
 body.index-refresh .skill-list,
@@ -206,11 +225,22 @@ body.index-refresh .detail-list {
 	margin-bottom: 1.5em;
 }
 
+body.index-refresh .experience-panel .detail-list {
+	margin-bottom: 1em;
+}
+
 body.index-refresh .detail-list li {
 	color: var(--refresh-text-soft);
 	margin-bottom: 0.55em;
 	padding-left: 1.1em;
 	position: relative;
+}
+
+body.index-refresh .experience-panel .detail-list li {
+	font-size: 0.88em;
+	line-height: 1.45;
+	margin-bottom: 0.4em;
+	padding-left: 0.95em;
 }
 
 body.index-refresh .detail-list li:before {
@@ -222,6 +252,12 @@ body.index-refresh .detail-list li:before {
 	position: absolute;
 	top: 0.68em;
 	width: 0.35em;
+}
+
+body.index-refresh .experience-panel .detail-list li:before {
+	height: 0.28em;
+	top: 0.58em;
+	width: 0.28em;
 }
 
 body.index-refresh .skill-list {
@@ -242,32 +278,51 @@ body.index-refresh .skill-list li {
 	text-transform: uppercase;
 }
 
+body.index-refresh .experience-panel .skill-list {
+	gap: 0.4em;
+}
+
+body.index-refresh .experience-panel .skill-list li,
+body.index-refresh .experience-panel .project-link-list a {
+	font-size: 0.68em;
+	padding: 0.28em 0.58em;
+}
+
 body.index-refresh .project-grid,
 body.index-refresh .noscript-card-grid {
 	display: grid;
-	gap: 1.5em;
+	gap: 1.15em;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1.5em;
-	max-width: 52rem;
+	max-width: 44rem;
 }
 
 body.index-refresh .project-card {
 	color: inherit;
 	cursor: pointer;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	font: inherit;
+	font-size: 0.9em;
 	height: auto;
 	letter-spacing: 0;
-	line-height: 1.65;
+	line-height: 1.45;
 	min-height: 100%;
 	overflow: hidden;
 	padding: 0;
 	text-align: left;
 	text-transform: none;
 	transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+	white-space: normal;
 	width: 100%;
+}
+
+body.index-refresh .project-card a,
+body.index-refresh .modal-panel a {
+	position: relative;
+	z-index: 1;
 }
 
 body.index-refresh .project-card:hover,
@@ -279,18 +334,71 @@ body.index-refresh .project-card:focus {
 }
 
 body.index-refresh .project-card-media img {
-	aspect-ratio: 16 / 9;
+	aspect-ratio: 16 / 8.5;
 	display: block;
 	object-fit: cover;
 	width: 100%;
 }
 
 body.index-refresh .project-card-body {
-	padding: 1.15em;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+	padding: 0.9em;
 }
 
 body.index-refresh .project-card-summary {
-	margin-bottom: 1.25em;
+	line-height: 1.42;
+	margin-bottom: 0.75em;
+	overflow-wrap: anywhere;
+	white-space: normal;
+}
+
+body.index-refresh .project-link-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.55em;
+	margin: 0 0 1.15em 0;
+}
+
+body.index-refresh .project-card .project-link-list {
+	margin-top: auto;
+	padding-top: 0.75em;
+}
+
+body.index-refresh .modal-panel .project-link-list {
+	margin-top: 1em;
+}
+
+body.index-refresh .experience-panel .project-link-list {
+	margin-top: 1.25em;
+}
+
+body.index-refresh .project-link-list a {
+	border: solid 1px rgba(155, 241, 255, 0.3);
+	border-radius: 999px;
+	color: var(--refresh-accent-bright);
+	font-size: 0.78em;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	padding: 0.35em 0.75em;
+	text-transform: uppercase;
+}
+
+body.index-refresh .project-card .skill-list {
+	gap: 0.4em;
+}
+
+body.index-refresh .project-card .skill-list li,
+body.index-refresh .project-card .project-link-list a {
+	font-size: 0.68em;
+	padding: 0.28em 0.58em;
+}
+
+body.index-refresh .project-link-list a:hover,
+body.index-refresh .project-link-list a:focus {
+	background: rgba(155, 241, 255, 0.1);
+	color: #ffffff !important;
 }
 
 body.index-refresh .noscript-card-grid article {
@@ -383,15 +491,18 @@ body.index-refresh .education-block {
 	border: solid 1px var(--refresh-line);
 	border-radius: 8px;
 	box-shadow: 0 1em 2.5em rgba(0, 0, 0, 0.16);
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 1.5em;
-	padding: 2em;
+	max-width: 46rem;
+	padding: 1.35em;
 }
 
 body.index-refresh .education-heading {
 	align-items: center;
 	display: flex;
-	gap: 1.25em;
-	margin-bottom: 2em;
+	gap: 1em;
+	margin-bottom: 1.15em;
 }
 
 body.index-refresh .education-mark {
@@ -399,33 +510,33 @@ body.index-refresh .education-mark {
 	border-radius: 8px;
 	display: block;
 	flex: 0 0 auto;
-	height: 4.5rem;
+	height: 3.75rem;
 	object-fit: contain;
-	padding: 0.6em;
-	width: 4.5rem;
+	padding: 0.5em;
+	width: 3.75rem;
 }
 
 body.index-refresh .education-school {
 	color: #ffffff;
-	font-size: 1.25em;
+	font-size: 1.05em;
 	font-weight: 600;
-	margin-bottom: 0.2em;
+	margin-bottom: 0.1em;
 }
 
 body.index-refresh .education-degree {
 	color: var(--refresh-text-soft);
-	font-size: 1em;
+	font-size: 0.9em;
 	margin-bottom: 0;
 }
 
 body.index-refresh .coursework-list {
 	display: grid;
-	gap: 1.25em;
+	gap: 0.75em;
 }
 
 body.index-refresh .coursework-item {
 	border-top: solid 1px var(--refresh-line);
-	padding-top: 1.25em;
+	padding-top: 0.75em;
 }
 
 body.index-refresh .coursework-item:first-child {
@@ -435,19 +546,22 @@ body.index-refresh .coursework-item:first-child {
 
 body.index-refresh .course-code {
 	color: var(--refresh-accent-bright);
-	font-size: 0.82em;
+	font-size: 0.72em;
 	font-weight: 600;
 	letter-spacing: 0.18em;
-	margin-bottom: 0.35em;
+	margin-bottom: 0.1em;
 	text-transform: uppercase;
 }
 
 body.index-refresh .coursework-item h3 {
-	margin-bottom: 0.35em;
+	font-size: 1em;
+	margin-bottom: 0.1em;
 }
 
 body.index-refresh .coursework-item p:last-child {
 	color: var(--refresh-text-soft);
+	font-size: 0.9em;
+	line-height: 1.5;
 	margin-bottom: 0;
 }
 
@@ -553,6 +667,10 @@ body.index-refresh .contact-method a + a {
 	body.index-refresh .experience-panel,
 	body.index-refresh .modal-panel {
 		padding: 1.5em;
+	}
+
+	body.index-refresh .experience-panel {
+		padding: 1.2em;
 	}
 
 	body.index-refresh .experience-panel-header {
