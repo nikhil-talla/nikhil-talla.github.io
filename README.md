@@ -1,2 +1,2 @@
 # Portfolio
-[Go To Website](https://niktrooper.github.io/nikhiltalla.github.io/)
+[Go To Website](https://nikhil-talla.github.io/index.html)
