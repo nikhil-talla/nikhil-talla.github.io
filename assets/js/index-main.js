@@ -6,27 +6,28 @@
 			{
 				id: 'ge-aerospace',
 				title: 'GE Aerospace',
-				role: 'Engineering experience',
-				time: 'Most recent',
-				location: 'Location coming soon',
+				role: 'Software Engineering Intern',
+				time: 'May 2026 - Present',
+				location: 'Grand Rapids, Michigan',
 				logo: 'images/GE-Aerospace-Emblem-Circular.png',
-				summary: 'Aerospace engineering experience with role, date, and impact details coming soon.',
-				skills: ['Software Engineering', 'Systems', 'C++', 'Python'],
+				summary: 'RTOS I/O driver development in LynxOS for aerospace systems.',
+				skills: ['C', 'RTOS', 'UNIX', 'Driver Development', 'Software Engineering', 'Systems', 'Python'],
+				links: [
+					{ label: 'View GE Aerospace Site', url: 'https://www.geaerospace.com/' }
+				],
 				details: [
-					'Role title, team, and dates can be edited in this data array.',
-					'Technical work, tools, and languages can be expanded here.',
-					'Measurable outcomes, ownership, and collaboration details can be added here.'
+					'RTOS I/O driver development in LynxOS for aerospace systems.'
 				]
 			},
 			{
 				id: 'michigan-mars-rover',
 				title: 'Michigan Mars Rover Team',
-				role: 'Embedded Software Subteam',
+				role: 'Software Engineer',
 				time: 'August 2025 - Present',
 				location: 'Ann Arbor, Michigan',
 				logo: 'images/mrover_logo.jpg',
 				summary: 'MRover is a university engineering design team that builds a fully autonomous rover for NASA\'s University Rover Challenge. As a member of MRover\'s embedded software subteam, I develop software for the rover\'s CAN-based communication and telemetry systems. My work includes implementing a runtime DBC parsing library, building a low-latency CAN-FD telemetry pipeline on Linux, and programming embedded drivers for sensors and actuators. These projects strengthened my experience with C/C++, embedded systems, multithreading, hardware integration, and defensive software design.',
-				skills: ['C++', 'C', 'Concurrency', 'Embedded Systems', 'CAN-FD', 'Linux', 'Hardware Integration'],
+				skills: ['C++', 'C', 'Concurrency', 'Embedded Systems', 'CAN-FD', 'Linux'],
 				links: [
 					{ label: 'View MRover Site', url: 'https://mrover.org/' }
 				],
@@ -39,16 +40,19 @@
 			{
 				id: 'otherside-games',
 				title: 'Otherside Games',
-				role: 'Game development',
-				time: 'Earlier',
-				location: 'Location coming soon',
+				role: 'Software Engineer',
+				time: 'August 2024 - December 2025',
+				location: 'Grand Rapids, Michigan',
 				logo: 'images/OthersideGamesLogo.jpeg',
-				summary: 'Game development experience combining programming, design iteration, and creative production.',
-				skills: ['Unity', 'C#', 'Gameplay Systems', 'Collaboration'],
+				summary: 'At Otherside Games, I collaborated with a small team to develop a 2D video game using Unity and C#. When I first started at Otherside, I had little experience with Unity, which strengthened my ability to quickly adopt unfamiliar tools and technologies. Through this role, I also gained experience collaborating on source code using Git and working within a team-based software development workflow.',
+				skills: ['C#', 'Unity'],
+				links: [
+					{ label: 'View Otherside Games', url: 'https://www.linkedin.com/company/othersidegames' }
+				],
 				details: [
-					'Role, dates, and project scope can be added once finalized.',
-					'Gameplay systems, tooling, or production responsibilities can be expanded here.',
-					'Launch, playtest, or team impact details can be added here.'
+					'Developed a 2D video game with self-taught Unity and C#, collaborating on source code via Git version control.',
+					'Designed FSM enemy AI movement and combat using Physics2D ray and box casts for perception, hit detection, and knockback. Scripted an input controller for inventory management and player movement with Animator integration.',
+					'Automated JSON item generation pipelines with ScriptableObjects, decreasing development time by 82%.'
 				]
 			}
 		],
@@ -78,6 +82,29 @@
 				]
 			},
 			{
+				id: 'cache-simulator',
+				type: 'Project',
+				title: 'Cache Simulator',
+				subtitle: '',
+				time: '',
+				cover: 'images/Cache_Simulator.png',
+				coverAlt: 'Cache simulator project visualization',
+				summary: 'A flexible cache simulator built in C.',
+				modalSummary: 'Built a configurable CPU cache simulator in C with support for variable block sizes, set counts, and associativity levels. The simulator models write-back caching with allocate-on-write behavior, LRU block replacement, and instruction fetch, load, and store handling by coordinating data transfers between the processor, cache, and memory.',
+				skills: ['C', 'Computer Architecture'],
+				links: [
+					{ label: 'Contact for Release', url: '#contact' }
+				],
+				images: [
+					{ src: 'images/Cache_Simulator.png', alt: 'Cache simulator project visualization' }
+				],
+				details: [
+					'Implemented configurable cache behavior for block size, set count, and associativity to model multiple cache organizations.',
+					'Supported write-back with allocate-on-write policy and LRU replacement for realistic cache state management.',
+					'Handled instruction fetches, loads, and stores by managing data movement between processor requests, cache blocks, and backing memory.'
+				]
+			},
+			{
 				id: 'dill-study',
 				type: 'Project',
 				title: 'Dill.Study',
@@ -100,6 +127,29 @@
 				details: [
 					'Engineered and collaborated on a homework-tutoring web app using React and TypeScript with PDF parsing and LaTeX rendering. Accelerated multi-page parsing by 3 times via an adaptive concurrency pool and local caching.',
 					'Integrated the Google Gemini API for real-time AI chatbot tutoring, providing explanations with under 500 ms first-token latency and generating personalized practice problems similar to users\' past homework stored in Firestore.'
+				]
+			},
+			{
+				id: 'kitchen-chaos',
+				type: 'Project',
+				title: 'Kitchen Chaos',
+				subtitle: '',
+				time: '',
+				cover: 'images/KitchenChaos_Cover.png',
+				coverAlt: 'Kitchen Chaos cooking simulator game cover',
+				summary: 'A complete cooking simulator video game.',
+				modalSummary: 'Kitchen Chaos is a small-scale casual cooking game inspired by Overcooked, where players prepare and deliver specific orders before time runs out. The project is built as a complete game package with scene cycles, sound, animation, an options menu, saveable settings, and customizable key bindings. I built it while following Code Monkey\'s complete-game tutorial, using the project to strengthen my Unity and C# fundamentals through a finished, playable WebGL build.',
+				skills: ['C#', 'Unity', 'Game Development', 'Design Patterns'],
+				links: [
+					{ label: 'Play Game', url: 'gamedev_pages/kitchenchaos.html' }
+				],
+				images: [
+					{ src: 'images/KitchenChaos_Cover.png', alt: 'Kitchen Chaos cooking simulator game cover' }
+				],
+				details: [
+					'Applied intermediate C# concepts including events, ScriptableObjects, interfaces, inheritance, delegates, callbacks, and enums.',
+					'Implemented observer and state machine design patterns to structure gameplay flow and object behavior.',
+					'Decoupled game logic, visuals, sounds, and UI through focused classes with clear methods and event-driven communication.'
 				]
 			}
 		]
@@ -149,10 +199,20 @@
 		list.className = 'project-link-list';
 
 		(links || []).forEach(function (linkData) {
+			if (linkData.inactive || !linkData.url) {
+				const label = document.createElement('span');
+				label.className = 'project-link-disabled';
+				label.textContent = linkData.label;
+				list.appendChild(label);
+				return;
+			}
+
 			const link = document.createElement('a');
 			link.href = linkData.url;
-			link.target = '_blank';
-			link.rel = 'noopener';
+			if (!linkData.url.startsWith('#')) {
+				link.target = '_blank';
+				link.rel = 'noopener';
+			}
 			link.textContent = linkData.label;
 			list.appendChild(link);
 		});
@@ -297,13 +357,8 @@
 		}
 
 		modalLinks.innerHTML = '';
-		(item.links || []).forEach(function (linkData) {
-			const link = document.createElement('a');
-			link.href = linkData.url;
-			link.target = '_blank';
-			link.rel = 'noopener';
-			link.textContent = linkData.label;
-			modalLinks.appendChild(link);
+		createProjectLinks(item.links).childNodes.forEach(function (linkNode) {
+			modalLinks.appendChild(linkNode.cloneNode(true));
 		});
 		modalLinks.hidden = !modalLinks.children.length;
 
@@ -379,7 +434,15 @@
 	});
 
 	projectList.addEventListener('click', function (event) {
-		if (event.target.closest('a')) {
+		const link = event.target.closest('a');
+
+		if (link && link.getAttribute('href').startsWith('#')) {
+			event.preventDefault();
+			smoothScrollTo(link.getAttribute('href'));
+			return;
+		}
+
+		if (link || event.target.closest('.project-link-disabled')) {
 			return;
 		}
 
@@ -416,6 +479,18 @@
 	});
 
 	modal.addEventListener('click', function (event) {
+		const link = event.target.closest('a');
+
+		if (link && link.getAttribute('href').startsWith('#')) {
+			const hash = link.getAttribute('href');
+			event.preventDefault();
+			closeModal();
+			window.setTimeout(function () {
+				smoothScrollTo(hash);
+			}, 120);
+			return;
+		}
+
 		if (event.target.closest('[data-close-modal]')) {
 			closeModal();
 		}
